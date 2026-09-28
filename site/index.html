@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hearth: Discord with Vencord built in</title>
+    <meta name="description" content="A Discord desktop app with Vencord built in. Lighter than the official app, better for your privacy, and run by its community." />
+    <meta name="theme-color" content="#17110E" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hearth" />
+    <meta property="og:description" content="A Discord desktop app with Vencord built in, run by its community." />
+    <meta property="og:url" content="https://hearth.umceko.com/" />
+    <meta property="og:image" content="https://hearth.umceko.com/og.png" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="preload" href="recursive-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <script src="copy.js" defer></script>
+</head>
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="topbar">
+        <a class="brand" href="/">
+            <svg class="brand-mark" viewBox="30 24 140 160" aria-hidden="true">
+                <path fill="#E4572E" d="M100,178 C64,160 36,134 36,100 C36,72 50,52 70,30 C72,48 84,58 100,74 C116,58 128,48 130,30 C150,52 164,72 164,100 C164,134 136,160 100,178 Z" />
+                <path fill="#F9A03F" d="M100,90 C114,110 128,124 128,140 C128,156 115,166 100,166 C85,166 72,156 72,140 C72,124 86,110 100,90 Z" />
+            </svg>
+            Hearth
+        </a>
+        <nav aria-label="Main">
+            <a href="#features">Features</a>
+            <a href="#install">Install</a>
+            <a href="https://github.com/hearthdesktop/hearth">GitHub</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="hero-copy">
+                <h1 class="wordmark">Hearth</h1>
+                <p class="lede">
+                    A Discord desktop app with Vencord built in. It's lighter than the official app, keeps Discord away
+                    from your system, and is run by its community.
+                </p>
+                <div class="actions">
+                    <a class="button button-primary" href="#install">Download</a>
+                    <a class="button" href="https://github.com/hearthdesktop/hearth">Source on GitHub</a>
+                </div>
+            </div>
+
+            <div class="hearth" aria-hidden="true">
+                <div class="firebox">
+                    <div class="glow"></div>
+                    <svg class="fire" viewBox="10 22 180 180">
+                        <path class="flame flame-outer" fill="#E4572E" d="M100,178 C64,160 36,134 36,100 C36,72 50,52 70,30 C72,48 84,58 100,74 C116,58 128,48 130,30 C150,52 164,72 164,100 C164,134 136,160 100,178 Z" />
+                        <path class="flame flame-inner" fill="#F9A03F" d="M100,90 C114,110 128,124 128,140 C128,156 115,166 100,166 C85,166 72,156 72,140 C72,124 86,110 100,90 Z" />
+                        <path class="flame flame-core" fill="#FFE3A3" d="M100,122 C108,134 114,142 114,150 C114,158 108,162 100,162 C92,162 86,158 86,150 C86,142 92,134 100,122 Z" />
+                        <g fill="#9A6440">
+                            <rect x="46" y="170" width="108" height="14" rx="3" transform="rotate(-9 100 177)" />
+                            <rect x="46" y="170" width="108" height="14" rx="3" transform="rotate(9 100 177)" />
+                        </g>
+                        <circle cx="53.6" cy="184.3" r="5" fill="#D6A06A" />
+                        <circle cx="146.4" cy="184.3" r="5" fill="#D6A06A" />
+                    </svg>
+                </div>
+                <div class="hearthstone"></div>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <h2>What's different from the official app</h2>
+            <ul class="features">
+                <li>
+                    <h3>Vencord built in</h3>
+                    <p>Plugins and themes work from the first launch. There's nothing to install separately or re-apply after an update.</p>
+                </li>
+                <li>
+                    <h3>Lighter and quicker</h3>
+                    <p>Much lighter and faster than the official Discord app.</p>
+                </li>
+                <li>
+                    <h3>Discord stays out of your system</h3>
+                    <p>Discord runs without access to your system, which is far better for your privacy.</p>
+                </li>
+                <li>
+                    <h3>Screenshare with sound on Linux</h3>
+                    <p>Share your screen or a window with audio, on Wayland too, and choose which apps' sound goes out.</p>
+                </li>
+                <li>
+                    <h3>Game capture on Linux</h3>
+                    <p>Share a fullscreen game straight from the game, so your framerate holds up while you stream. Works with <a href="https://github.com/nowrep/obs-vkcapture">obs-vkcapture</a>.</p>
+                </li>
+                <li>
+                    <h3>Your Vesktop setup comes along</h3>
+                    <p>On first launch Hearth copies your Vesktop data, so you stay logged in and keep your settings.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="install" class="section">
+            <h2>Install</h2>
+            <dl class="platforms">
+                <div class="platform">
+                    <dt>Windows</dt>
+                    <dd>Installer or portable zip</dd>
+                    <dd><a class="button button-small" href="https://github.com/hearthdesktop/hearth/releases">Open releases</a></dd>
+                </div>
+                <div class="platform">
+                    <dt>macOS</dt>
+                    <dd>Universal disk image</dd>
+                    <dd><a class="button button-small" href="https://github.com/hearthdesktop/hearth/releases">Open releases</a></dd>
+                </div>
+                <div class="platform">
+                    <dt>Linux</dt>
+                    <dd>AppImage, deb, rpm or tar.gz</dd>
+                    <dd><a class="button button-small" href="https://github.com/hearthdesktop/hearth/releases">Open releases</a></dd>
+                </div>
+                <div class="platform">
+                    <dt>Arch Linux</dt>
+                    <dd class="command"><code>yay -S hearth-bin</code></dd>
+                    <dd><button type="button" class="button button-small copy" data-copy="yay -S hearth-bin" aria-label="Copy the Arch Linux command">Copy</button></dd>
+                </div>
+                <div class="platform">
+                    <dt>Nix</dt>
+                    <dd class="command"><code>nix run github:hearthdesktop/hearth</code></dd>
+                    <dd><button type="button" class="button button-small copy" data-copy="nix run github:hearthdesktop/hearth" aria-label="Copy the Nix command">Copy</button></dd>
+                </div>
+            </dl>
+            <p class="copy-status" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="section community">
+            <h2>Run by its community</h2>
+            <p>
+                Hearth is developed in the open. Report a bug, ask for a feature, or send a pull request. AI-assisted
+                code is welcome, as long as you've reviewed and tested it yourself.
+            </p>
+            <div class="actions">
+                <a class="button" href="https://github.com/hearthdesktop/hearth/issues/new/choose">Open an issue</a>
+                <a class="button" href="https://github.com/hearthdesktop/hearth/blob/main/CONTRIBUTING.md">Read the contributing guide</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>
+            Hearth is a fork of <a href="https://github.com/Vencord/Vesktop">Vesktop</a> and comes with
+            <a href="https://github.com/Vendicated/Vencord">Vencord</a>. It isn't affiliated with Discord.
+        </p>
+        <p>Free software under the GPL-3.0 · <a href="https://github.com/hearthdesktop">hearthdesktop on GitHub</a></p>
+    </footer>
+</body>
+</html>
